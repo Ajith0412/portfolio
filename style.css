@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: "Noto Sans", sans-serif;
+}
+
+
+
+.banner_section {
+    height: 90vh;
+}
+
+
+.navbar-brand {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.nav-link {
+    font: bold 17px/1.4 'Open Sans', arial, sans-serif;
+    color: black;
+}
+
+.nav-link {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    padding: 15px 20px;
+    position: relative;
+}
+
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.blop {
+    height: 70vh;
+    width: 30vw;
+    border-radius: 78% 22% 39% 61% / 59% 43% 57% 41%;
+    background-color: #f4b146;
+    position: absolute;
+    right: 0;
+}
+
+.blop_1 {
+    height: 70vh;
+    width: 30vw;
+    border-radius: 81% 19% 71% 29% / 53% 47% 53% 47%;
+    background-color: #f4b146;
+    position: absolute;
+    left: -442px;
+    top: 442px;
+}
+
+.name-text {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.text-container {
+    height: 50vh;
+    display: flex;
+    align-items: end;
+}
+
+.desigination-text {
+    font-size: 30px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.btn-hire {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #f7b357;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-top: 15px;
+}
+
+.des-text {
+    margin-top: 15px;
+    font-size: 18px;
+    color: gray
+}
+
+.btn-cv {
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+/* .    -img-out {
+    height: 50vh;
+    width: 100%;
+    max-width: 45%;
+    background-color: gray;
+} */
+
+.about-img {
+    width: 65%;
+}
+
+.about-content h4 {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.about-content h4 span {
+    color: #f7b357;
+}
+
+/* .about-content h4 span::after {
+    content: "";
+    height: 1px;
+    width: 40px;
+    background-color: green;
+    position: absolute;
+} */
+
+.about-content p {
+
+    font-size: 18px;
+}
+
+
+.about-content h3 {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.contect-text {
+    display: flex;
+}
+
+.contect-text p {
+    font-size: 18px;
+    width: 30%;
+    font-weight: 500;
+}
+
+.myskils {
+    margin-top: 50px;
+}
+
+.skills_heading {
+    text-align: center;
+}
+
+.skills_heading h4 {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.progress_circle {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    margin: 10px 20px;
+    width: 260px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.card .percent {
+    position: relative;
+}
+
+.card svg {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    transform: rotate(-90deg);
+}
+
+.card svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-width: 5;
+    stroke-linecap: round;
+}
+
+.card svg circle:last-of-type {
+    stroke-dasharray: 450px;
+    stroke-dashoffset: calc(450px - (450px * var(--percent)) / 100);
+    stroke: #4f68e4;
+}
+
+.card .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card .number h3 {
+    font-weight: 200;
+    font-size: 2rem;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.card .number h3 span {
+    font-size: 1.7rem;
+}
+
+.card .title h2 {
+    /* margin: 25px 0 0; */
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    color: gray;
+    /* margin-top: 15px; */
+}
+
+/* .card:nth-child(1) svg circle:last-of-type {
+    stroke: #f39c12;
+}
+
+.card:nth-child(2) svg circle:last-of-type {
+    stroke: #2ecc71;
+} */
